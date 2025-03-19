@@ -39,10 +39,28 @@
     align-items: center;
     gap: 24px;
     font-size: 1.2rem;
+    transform: .25s ease;
     select {
       font-size: 1.2rem;
       background: transparent;
       color: #fff;
+      &:hover{
+      color: $bg-primary;
+      }
+    }
+    a{
+      transform: .25s ease;
+      &:hover{
+      color: $bg-primary;
+
+      }
+    }
+    i{
+      cursor: pointer;
+      transition: .25s ease;
+      &:hover{
+      color: $bg-primary;
+      }
     }
   }
 }
