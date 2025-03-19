@@ -13,10 +13,32 @@
     gap: 40px;
     place-items: center;
   }
+  &__card {
+  }
   &__hero {
+    position: relative;
     img {
       border-radius: 50%;
       object-fit: cover;
+      height: 100%;
+    }
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 140px;
+      height: 140px;
+      background: $bg-primary;
+      border-radius: 50%;
+      outline: 10px solid #ffffff;
+      display: grid;
+      place-items: center;
+      color: #ffffff;
+      transition: 0.25s ease;
+      &:hover {
+        background: rgb(204, 164, 112);
+      }
     }
   }
   &__body {
