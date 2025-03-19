@@ -16,10 +16,15 @@
   &__desc {
     width: 50%;
   }
+
   &__img {
     position: relative;
     img {
       border-radius: 10px;
+      transition: .2s ease;
+      &:hover{
+        transform: scale(1.01);
+      }
     }
     button {
       position: absolute;
