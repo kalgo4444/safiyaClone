@@ -1,0 +1,136 @@
+.about {
+  &__title {
+    margin-top: 6rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 100px;
+    padding: 0 80px;
+  }
+  &__img,
+  &__desc {
+    width: 50%;
+  }
+  &__img {
+    position: relative;
+    img {
+      border-radius: 10px;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      right: -7%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      color: #ffffff;
+      background: $bg-primary;
+      outline: 10px solid #ffffff;
+      transition: 0.2s;
+      &:hover {
+        background: #695833;
+      }
+    }
+  }
+  &__desc {
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.125rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      color: #898980;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .about {
+    &__wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &__img,
+    &__desc {
+      width: 100%;
+    }
+    &__img {
+      button {
+        right: 0;
+        top: 50%;
+        right: 17%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        width: 120px;
+        height: 120px;
+        outline: 9px solid #ffffff;
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .about {
+    &__img {
+      button {
+        right: 0;
+        top: 50%;
+        right: -10%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        width: 120px;
+        height: 120px;
+        outline: 7px solid #ffffff;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .about {
+    &__wrapper {
+      padding: 0 40px;
+      gap: 50px;
+    }
+    &__img {
+      button {
+        right: 0;
+        top: 50%;
+        right: -10%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .about {
+    &__wrapper {
+      padding: 0 20px;
+    }
+    &__img {
+      button {
+        right: 0;
+        top: 50%;
+        right: -10%;
+        transform: translateY(-50%);
+        font-size: 12px;
+        width: 70px;
+        height: 70px;
+        outline: 6px solid #ffffff;
+      }
+    }
+  }
+}

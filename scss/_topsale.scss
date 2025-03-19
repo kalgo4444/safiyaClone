@@ -48,9 +48,9 @@
 
 @media (max-width: 768px) {
   .top {
-    &__wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
     &__body {
       p {
@@ -70,7 +70,7 @@
 }
 @media (max-width: 550px) {
   .top {
-    &__wrapper{
+    &__wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
@@ -93,7 +93,7 @@
 }
 @media (max-width: 400px) {
   .top {
-    &__wrapper{
+    &__wrapper {
       display: grid;
       grid-template-columns: 1fr;
     }
